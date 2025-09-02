@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz da Balaiada - História do Maranhão</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz da Balaiada</h1>
+            <p class="subtitle">Melhor Quiz de Todos </p>
+        </header>
+
+        <div id="quiz-container">
+            <div id="start-screen" class="screen active">
+                <div class="intro">
+                    <h2>🏛️ Bem-vindo ao Quiz dos Relíquias</h2>
+                    <p>Feito por Matheus Morais, Daniel Victor, Victor Mori, Luis Mori, José, Miguel Duque.</p>
+                    <button id="start-btn" class="btn-primary">Iniciar Quiz</button>
+                </div>
+            </div>
+
+            <div id="question-screen" class="screen">
+                <div class="question-header">
+                    <span id="question-counter">Pergunta 1 de 5</span>
+                    <div class="progress-bar">
+                        <div id="progress" class="progress-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="question-content">
+                    <h3 id="question-text"></h3>
+                    <div id="options-container" class="options"></div>
+                </div>
+                
+                <button id="next-btn" class="btn-secondary" style="display: none;">Próxima Pergunta</button>
+            </div>
+
+            <div id="result-screen" class="screen">
+                <div class="result-content">
+                    <h2>🎯 Resultado Final</h2>
+                    <div id="score-display"></div>
+                    <div id="feedback"></div>
+                    <button id="restart-btn" class="btn-primary">Refazer Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
